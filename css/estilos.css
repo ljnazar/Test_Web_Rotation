@@ -1,0 +1,90 @@
+*{
+	padding: 0;
+	margin: auto;
+}
+
+body{
+	font: normal 4px Tahoma, Verdana, Arial, sans-serif;
+	background: rgba(76,76,76,1);
+	color: #fff;
+}
+
+h1{
+	text-align: center;
+	padding: 25px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #000;
+	text-shadow: 1px 1px 1px #888;
+}
+
+#divContenedor{
+	width: 850px;
+	padding-top: 40px;
+}
+
+ul{
+	list-style-type: none;
+	padding-top: 40px;
+}
+
+ul>li{
+	text-align: center;
+	margin-bottom: 20px;
+	display: inline-block;
+	background: #fff;
+	width: 850px;
+	padding: 0px;
+	border: solid 1px #444;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #222;
+	position: relative;
+}
+
+ul>li ol{
+	display: none;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+ul>li ol dt{
+	color: #000;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #ccc;
+	text-align: center;
+}
+
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 80px;
+    padding: 8px;
+    width: 450px;
+    margin: auto;         
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
+}
+
+.progress-bar span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;    
+}
+
+.blue span {
+	background-color: #34c2e3;   
+}
+
+.stripes span {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+    	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+    	transparent 75%, transparent);            
+    text-align: center;
+	animation: animate-stripes 5s linear infinite;            
+}
+
+@keyframes animate-stripes {
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
