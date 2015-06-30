@@ -4,7 +4,7 @@
 }
 
 body{
-	font: normal 4px Tahoma, Verdana, Arial, sans-serif;
+	font: normal 5px Tahoma, Verdana, Arial, sans-serif;
 	background: rgba(120,120,120,1);
 	color: #fff;
 }
@@ -20,16 +20,12 @@ h1{
 
 .contenedor{
 	width: 870px;
-	padding-top: 40px;
-}
-
-.logo{
- 	width: 150px 
+	padding-top: 20px;
 }
 
 ul{
 	list-style-type: none;
-	padding-top: 40px;
+	padding-top: 20px;
 }
 
 ul>li{
@@ -45,15 +41,35 @@ ul>li{
 	position: relative;
 }
 
-ul>li ol{
-	display: none;
-	margin-top: 15px;
-	margin-bottom: 15px;
+.logo1{
+	width: 150px;
 }
 
-ul>li ol dt{
+.logo2{
+	height: 150px;
+ 	width: 680px;
+}
+
+ul>li div.datos{
+	display: none;
+}
+
+#map{
+	margin-top: 10px;
+	margin-left: 20px;
+	width:300px;
+	height:200px;
+	float: left;
+	margin-bottom: 20px;
+	border: solid 0px #222;
+	border-radius: 2px;
+	box-shadow: 0 0 2px #111;
+}
+
+
+ul>li div.datos p{
 	color: #000;
-	font-size: 25px;
+	font-size: 22px;
 	text-shadow: 1px 1px 1px #ccc;
 	text-align: center;
 }
@@ -86,7 +102,7 @@ ul>li ol dt{
     	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
     	transparent 75%, transparent);            
     text-align: center;
-	animation: animate-stripes 5s linear infinite;            
+	animation: animate-stripes 5s linear infinite;          
 }
 
 @keyframes animate-stripes{
