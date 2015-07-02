@@ -4,50 +4,80 @@
 }
 
 body{
-	font: normal 5px Tahoma, Verdana, Arial, sans-serif;
+	font: normal 4px Sans-serif;
 	background: rgba(120,120,120,1);
 	color: #fff;
 }
 
-h1{
-	text-align: center;
-	padding: 25px;
-	font-size: 20px;
-	text-transform: uppercase;
-	color: #000;
-	text-shadow: 1px 1px 1px #888;
-}
-
 .contenedor{
 	width: 870px;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 ul{
 	list-style-type: none;
-	padding-top: 20px;
+
 }
 
 ul>li{
 	text-align: center;
-	margin-bottom: 30px;
 	display: inline-block;
 	background: #fff;
 	width: 870px;
-	padding: 0px;
 	border: solid 2px #333;
 	border-radius: 10px;
 	box-shadow: 0 0 20px #111;
+}
+
+.logo{
 	position: relative;
+	top: 20px;
+	right: 15px;
+	height: 180px;
+	width: 180px;
+	border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
-.logo1{
-	width: 150px;
+.titulo{
+	vertical-align: top;
+	position: relative;
+	top: 20px;
+	left: 15px;
+	height: 140px;
+ 	width: 620px;
 }
 
-.logo2{
-	height: 150px;
- 	width: 680px;
+.texto1{
+	position: relative;
+	left: 162px;
+	bottom: 17px;
+	height: 30px;
+ 	width: 143px;
+}
+
+.texto2{
+	position: relative;
+	left: 200px;
+	bottom: 17px;
+	height: 28px;
+ 	width: 135px;
+}
+
+.texto3{
+	position: relative;
+	left: 238px;
+	bottom: 10px;
+	height: 35px;
+ 	width: 260px;
+}
+
+.texto4{
+	position: relative;
+	right: 224px;
+	bottom: 15px;
+	height: 28px;
+ 	width: 188px;
 }
 
 ul>li div.datos{
@@ -55,56 +85,28 @@ ul>li div.datos{
 }
 
 #map{
-	margin-top: 10px;
-	margin-left: 20px;
-	width:300px;
-	height:200px;
+	width: 300px;
+	height: 200px;
 	float: left;
 	margin-bottom: 20px;
-	border: solid 0px #222;
-	border-radius: 2px;
-	box-shadow: 0 0 2px #111;
+	margin-left: 20px;
+	border: solid 1px #999;
+	border-radius: 4px;
+	box-shadow: 0 0 2px #000;
 }
 
 
 ul>li div.datos p{
 	color: #000;
-	font-size: 22px;
-	text-shadow: 1px 1px 1px #ccc;
+	font-size: 24px;
+	text-shadow: 1px 1px 1px #333;
 	text-align: center;
 }
 
-.progress-bar{
-    background-color: #1a1a1a;
-    height: 80px;
-    padding: 8px;
-    width: 450px;
-    margin: auto;         
-    border-radius: 5px;
-    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
-}
-
-.progress-bar span{
-    display: inline-block;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
-    transition: width .4s ease-in-out;    
-}
-
-.blue span{
-	background-color: #34c2e3;   
-}
-
-.stripes span{
-    background-size: 30px 30px;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
-    	transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
-    	transparent 75%, transparent);            
-    text-align: center;
-	animation: animate-stripes 5s linear infinite;          
-}
-
-@keyframes animate-stripes{
-	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+#mark1{
+	position: center;
+	margin-top: 20px;
+	width: 200px;
+	height: 100px;
+	display: none;
 }

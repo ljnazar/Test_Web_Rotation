@@ -4,7 +4,7 @@ $(function(){
 		//obtenemos la instancia del elemento
 		var $objItem=$(this);
 		//buscamosla imagen y la rotamos 360 grados
-		$objItem.find('.logo1').stop(true,true).rotate({
+		$objItem.find('.logo').stop(true,true).rotate({
 			duration: 3000,
 			animateTo: 360
 		});
@@ -19,8 +19,10 @@ $(function(){
 		//buscamos la etiqueta y la deslizamos hacia arriba
 		$objItem.find('.datos').stop(true,true).slideUp('slow');
 		//rotamos la imagen a 0 (cero) grados
-		$objItem.find('.logo1').stop(true,true).rotate({
+		$objItem.find('.logo').stop(true,true).rotate({
 			animateTo: 0
 		});
+		//ocultamos las marcas
+		document.getElementById('mark1').style.display="none";
 	});
 });
