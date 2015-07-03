@@ -24,5 +24,6 @@ $(function(){
 		});
 		//ocultamos las marcas
 		document.getElementById('mark1').style.display="none";
+		document.getElementById('mark2').style.display="none";
 	});
 });
