@@ -1,5 +1,5 @@
 function displayMap() {
-    document.getElementById('map').style.display="block";
+    $('#map').css('display','block');
     iniciar();
 }
 
@@ -9,7 +9,7 @@ function iniciar() {
 		zoom: 14,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
-	var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+	var map = new google.maps.Map(document.getElementById('map'),mapOptions);
 
 	//marcador con la ubicación de la empresa
 	var place = new google.maps.LatLng(-32.173320, -64.110574);

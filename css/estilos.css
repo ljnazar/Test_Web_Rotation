@@ -9,7 +9,7 @@ body{
 	color: #fff;
 }
 
-.contenedor{
+#contenedor{
 	width: 870px;
 	padding-top: 40px;
 }
@@ -29,7 +29,7 @@ ul>li{
 	box-shadow: 0 0 20px #111;
 }
 
-.logo{
+#logo{
 	position: relative;
 	top: 20px;
 	right: 15px;
@@ -39,7 +39,7 @@ ul>li{
   	box-shadow: 0px 0px 0px 2px rgba(230,230,230,230);
 }
 
-.titulo{
+#titulo{
 	vertical-align: top;
 	position: relative;
 	top: 20px;
@@ -48,7 +48,7 @@ ul>li{
  	width: 620px;
 }
 
-.texto1{
+#texto1{
 	margin-left: 1px;
 	position: relative;
 	left: 164px;
@@ -57,7 +57,7 @@ ul>li{
  	width: 143px;
 }
 
-.texto2{
+#texto2{
 	position: relative;
 	left: 200px;
 	bottom: 17px;
@@ -65,7 +65,7 @@ ul>li{
  	width: 135px;
 }
 
-.texto3{
+#texto3{
 	position: relative;
 	left: 238px;
 	bottom: 10px;
@@ -73,7 +73,7 @@ ul>li{
  	width: 260px;
 }
 
-.texto4{
+#texto4{
 	position: relative;
 	right: 224px;
 	bottom: 15px;
@@ -81,7 +81,7 @@ ul>li{
  	width: 188px;
 }
 
-ul>li div.datos{
+ul>li div#datos{
 	display: none;
 }
 
@@ -97,7 +97,7 @@ ul>li div.datos{
 }
 
 
-ul>li div.datos p{
+ul>li div#datos p{
 	color: #000;
 	font-size: 24px;
 	text-shadow: 1px 1px 1px #333;
