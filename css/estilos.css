@@ -1,21 +1,68 @@
-*{
-	padding: 0;
-	margin: auto;
+/*Reseteo del código CSS (código de Eric Meyer)*/
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td { 
+        margin: 0; 
+        padding: 0; 
+        border: 0; 
+        outline: 0; 
+        font-weight: inherit; 
+        font-style: inherit; 
+        font-size: 100%; 
+        font-family: inherit; 
+        vertical-align: baseline; 
+} 
+/* remember to define focus styles! */ 
+:focus { 
+        outline: 0; 
+} 
+body { 
+        line-height: 1; 
+        color: black; 
+        background: white; 
+} 
+ol, ul { 
+        list-style: none; 
+} 
+/* tables still need 'cellspacing="0"' in the markup */ 
+table { 
+        border-collapse: separate; 
+        border-spacing: 0; 
+} 
+caption, th, td { 
+        text-align: left; 
+        font-weight: normal; 
+} 
+blockquote:before, blockquote:after, 
+q:before, q:after { 
+        content: ""; 
+} 
+blockquote, q { 
+        quotes: "" ""; 
 }
+
+/* Finalización del reseteo del código CSS */ 
+
 
 body{
 	font: normal 4px Sans-serif;
 	background: rgba(120,120,120,0.4);
+
 }
 
 #contenedor{
 	width: 870px;
-	padding-top: 40px;
+	padding-top: 5%;
+	margin: auto;
 }
 
 ul{
 	list-style-type: none;
-
 }
 
 ul>li{
@@ -32,52 +79,39 @@ ul>li{
 	position: relative;
 	top: 20px;
 	right: 15px;
-	height: 180px;
-	width: 180px;
 	border-radius: 180px 180px 180px 180px;
-  	box-shadow: 0px 0px 0px 2px rgba(230,230,230,230);
+  	box-shadow: 0px 0px 0px 2px rgba(230,230,230,1);
 }
 
 #titulo{
-	vertical-align: top;
 	position: relative;
+	vertical-align: top;
 	top: 20px;
 	left: 15px;
-	height: 140px;
- 	width: 620px;
 }
 
 #texto1{
-	margin-left: 1px;
 	position: relative;
 	left: 164px;
-	bottom: 17px;
-	height: 30px;
- 	width: 143px;
+	bottom: 19px;
 }
 
 #texto2{
 	position: relative;
 	left: 200px;
-	bottom: 17px;
-	height: 28px;
- 	width: 135px;
+	bottom: 19px;
 }
 
 #texto3{
 	position: relative;
 	left: 238px;
-	bottom: 10px;
-	height: 35px;
- 	width: 260px;
+	bottom: 12px;
 }
 
 #texto4{
 	position: relative;
-	right: 224px;
-	bottom: 15px;
-	height: 28px;
- 	width: 188px;
+	right: 222px;
+	bottom: 17px;
 }
 
 #datos{
@@ -99,11 +133,19 @@ ul>li{
 p{
 	color: #000;
 	font-size: 24px;
-	text-shadow: 1px 1px 1px #333;
+	text-shadow: 0.5px 0.5px 0.5px #333;
 }
 
 .detalles{
 	display: none;
 	text-align: center;
 	margin-top: 25px;
+}
+
+#IEsupport{
+	display: none;
+}
+
+#message-support{
+	display: none;
 }

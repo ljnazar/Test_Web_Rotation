@@ -6,9 +6,34 @@
 
     <meta charset="UTF-8">
 
+    <!--Fix: IE 11 uses IE 7 mode-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+
     <title>---- OFICOM SRL ----</title>
 
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <!--[if IE 6]>
+    <style type="text/css"> img{behavior: url(css/iepngfix.htc);} </style> 
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+    <style type="text/css"> #IEsupport{display: inline-block;} </style>
+    <style type="text/css"> #message-support{display: inline-block;} </style>
+    <![endif]-->
+
+    <!--[if (IE 7) | (IE 8)]>
+    <link rel="stylesheet" type="text/css" href="css/ie678.css">
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <style type="text/css"> ul>li{box-shadow: none;} </style>
+    <style type="text/css"> #map{border-radius: none; box-shadow: none;} </style>
+    <![endif]-->
+
+    <!--[if IE 9]>
+    <style type="text/css"> ul>li{box-shadow: none;} </style> 
+    <![endif]-->
 
     <link rel="shortcut icon" href="img/icono.ico">
 
@@ -20,20 +45,30 @@
                 <li>
                     <img id="logo" src="img/Logo.png" alt="Oficom">
                     <img id="titulo" src="img/Titulo.png" alt="Oficom">
-                    <img id="texto1" src="img/Texto1.png" alt="Oficom">
-                    <img id="texto2" src="img/Texto2.png" alt="Oficom">
-                    <img id="texto3" src="img/Texto3.png" alt="Oficom">
+                    <img id="texto1" src="img/Texto1.png" alt="Librería">
+                    <img id="texto2" src="img/Texto2.png" alt="Oficina">
+                    <img id="texto3" src="img/Texto3.png" alt="Computación">
                     <img id="texto4" src="img/Texto4.png" alt="Oficom">
                     <div id="datos">
                         <br><br>
                         <div id="map"></div>
-                        <br><br><br>
+                        <br><br><br><br><br><br>
                         <p>Libertad 44 - (5850) - Río Tercero - Córdoba</p>
-                        <br><br><br>
+                        <br><br><br><br>
                         <p>Tel. (03571) 427900 - 431556 - 414414</p>
-                        <br><br><br>
+                        <br><br><br><br>
                         <p>Contacto: <a href="mailto:oficom@riotel.com.ar">oficom@riotel.com.ar</a></p>
-						<br><br>
+                    </div>
+                    <div id="message-support" align="center">
+                        <br><br><br><br><br><br>
+                        <p><strong>Sitio Web no soportado por versiones aneriores a Internet Explorer 8</strong></p>
+                        <br><br><br><br><br><br>
+                        <p><strong>Actualice su navegador, o mejor aún, puede utilizar los navegadores Chrome o Firefox</strong></p>
+                        <br><br><br><br><br><br>
+                    </div>
+                    <div id="IEsupport" align="center">
+                        <p><a href="http://www.microsoft.com/windows/internet-explorer/download-ie.aspx"><strong>Actualizar Internet Explorer</strong></a> &mdash; <a href="https://www.google.com/chrome/browser/desktop/index.html"><strong>Descargar Chrome</strong></a> &mdash; <a href="https://www.mozilla.org/es-ES/firefox/new/"><strong>Descargar Firefox</strong></a></p>
+                        <br><br>
                     </div>
                 </li>
             </ul>
@@ -47,8 +82,26 @@
         <script type="text/javascript" src="js/mapa.js"></script>
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=es&callback=iniciar"></script>
         <script type="text/javascript" src="js/ext/jQueryRotateCompressed.2.2.js"></script>
+        <!--[if (IE 7) | (IE 8)]>
+        <script type="text/javascript" src="js/ext/PIE_IE678.js"></script>
+        <![endif]-->
         <script type="text/javascript" src="js/cartel.js"></script>
-        <script type="text/javascript" src="js/marcas.js"></script>
+        <!--[if lte IE 7]>
+        <script type="text/javascript">valor=0;</script>
+        <![endif]-->
+        <script type="text/javascript" src="js/detalles.js"></script>
+        <!--[if (IE 7) | (IE 8)]>
+        <script type="text/javascript" src="js/detalles_IE678.js"></script>
+        <![endif]-->
+        <!--Google Analytics-->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-67914911-1', 'auto');
+            ga('send', 'pageview');
+        </script>
 
 </body>
 
